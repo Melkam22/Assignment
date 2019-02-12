@@ -1,0 +1,70 @@
+body {
+    height: 100vh;
+   /*  border: 10px solid black; */
+}
+
+main {
+    margin: 15px;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+p{
+    display: none;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+
+@media only screen and (max-width: 375px){
+    .one, .red {
+        display: block;
+    }
+    body{
+        border: 5px solid red;
+         
+    }
+}
+
+    @media only screen and (min-width: 376px) and (max-width: 425px){
+        .two, .blue{
+            display: block;
+        }
+        body{
+            border: 10px solid blue;   
+        }
+    }
+    
+
+    @media only screen and (min-width: 426px) and (max-width: 768px){
+        .three, .green{
+            display: block;
+        }
+        body{
+            border:10px solid green;
+        }
+    }
+
+    @media only screen and (min-width: 769px) and (max-width: 1024px){
+        .four, .yellow {
+            display: block;
+        }
+        body{
+            border: 10px solid yellow;
+            This is the yellow border b/n 769 and 1024px text.
+        }
+    }
+
+    @media only screen and (min-width: 1025px) and (max-width: 1440px){
+        .five, .pink{
+            display: block;
+             
+        }
+        body{
+            border: 10px solid hotpink;
+             
+        }
+    }
+
+ 

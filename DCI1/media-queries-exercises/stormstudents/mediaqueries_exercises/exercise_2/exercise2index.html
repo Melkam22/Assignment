@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Media Queries: Exercise 2</title>
+
+    <style>
+
+.pic1, .pic2, .pic3, h1, p{
+    display: none;
+}
+
+.small, .medium, .big {
+    display: none;
+}
+
+ @media only screen and (max-width: 400px) {
+        .small, .pic1 {
+            display: block;
+        }
+
+        h1, p {
+            display: block;
+        }
+
+        .pic2, .pic3 {
+            display: none;
+        }
+        body{
+            background: silver;
+        }
+    }
+
+     @media only screen and (min-width: 400px) and (max-width: 651px){
+        .medium, .pic2 {
+            display: block;
+        }
+        h1,p {
+            display: block;
+        }
+        body{
+            background: green;
+        }
+    }
+
+    
+
+     @media screen and (min-width: 651px) and (max-width: 1100px){
+        .big, .pic3 {
+            display: block;
+        }
+         
+        h1, p {
+            display: block;
+        }
+        body{
+            background: orange;
+        }
+    } 
+
+    </style>
+</head>
+<body>
+
+    <main>
+
+        
+        <h1>Media Queries: Exercise 2</h1>
+        <p>Change the style of the page a different breakpoints!</p>
+        <ol>
+            <li>Style the page for mobile: add a margin, change the font-size & font-family etc.</li>
+            <li>Add a breakpoint for tablets. Change the styling of the page (margin, font-size, padding etc.) & change the font color</li>
+            <li>Add another breakpoint for desktop. Change the styling of the page & style the first letter of these list items</li>
+        </ol>
+
+    <div class="small">
+        <h1>Small phones</h1>
+        <p> the resolution is less than 400px</p>
+        <img class="pic1" src="moon.jpg" width="12%" height="15%">
+    </div>
+
+    <div class="medium">
+        <h1>tablets and small laptops</h1>
+        <p>the resolution is less than 650px</p>
+        <img class="pic2" src="city.jpg" width="15%" height="20%">
+    </div> 
+
+    <div class="big"> 
+        <h1>big laptops and normal desktops</h1>
+        <p>the resolution is b/n 651 and 1100px</p>
+        <img class="pic3" src="nature.jpg" width="12%" height="15%">
+    </div>
+
+    </main>
+    
+</body>
+</html>
