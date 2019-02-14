@@ -1,0 +1,25 @@
+/* Use flexbox to display all divs in a row at the bottom of the container. 
+Display divs on one line. */
+
+body {
+    height: 800px;
+}
+
+.container5{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+     
+}
+
+
+div {
+    height: 100px;
+    width: 150px; 
+    background-color: darkgray;
+    margin: 1em;
+    border: 2px solid red;
+    text-align: center;
+    align-self: flex-end;
+}

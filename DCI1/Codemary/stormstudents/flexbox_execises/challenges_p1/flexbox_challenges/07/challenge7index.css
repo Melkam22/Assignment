@@ -1,0 +1,29 @@
+    
+    
+    
+    /* Use flexbox to display all divs in one column on the right of the page.*/
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container7{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+     
+}
+
+div {
+    height: 100px;
+    width: 150px; 
+    background-color: darkgray;
+    margin: 1em;
+    border: 2px solid red;
+    text-align: center;
+}
