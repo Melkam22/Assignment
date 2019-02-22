@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+}
+
+ div {
+    background-color:  #F9423A;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    color: white; 
+    font-weight: bold;
+    font-size: 20px;
+    border: 1px solid black;
+}
+/*
+  .three, .five, .seven, .twelve {
+    background-color: orange;
+}
+ */
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+
+    "o o o t t t th th th th th th"
+    "o o o fo fo fo fi fi fi s s s"
+    "se se se se se  e n n n s s s"
+    "se se se se se te el el el el el el"
+    "tw tw tw tw tw tw tw tw tw tw tw tw";
+    
+}
+
+.one {
+    grid-area: o;
+}
+
+.two {
+    grid-area: t;
+}
+.three {
+    grid-area: th;
+}
+.four {
+    grid-area: fo;
+}
+.five {
+    grid-area: fi;
+}
+.six {
+    grid-area: s;
+}
+.seven {
+    grid-area: se;
+}
+.eight {
+    grid-area: e;
+}
+.nine {
+    grid-area: n;
+}
+.ten {
+    grid-area: te;
+}
+.eleven {
+    grid-area: el;
+}
+.twelve {
+    grid-area: tw;
+}
+
+
+                                            /*background color*/
+
+
+.one {
+    background: red;
+}
+
+.two {
+    background: red;
+}
+.three {
+    background: orange;
+}
+.four {
+    background: red;
+}
+.five {
+    background: orange;
+}
+.six {
+    background: red;
+}
+.seven {
+    background: orange;
+}
+.eight {
+    background: red;
+}
+.nine {
+    background: red;
+}
+.ten {
+    background: red;
+}
+.eleven {
+    background: red;
+}
+.twelve {
+    background: orange;
+}
+

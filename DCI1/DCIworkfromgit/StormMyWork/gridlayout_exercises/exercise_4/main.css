@@ -1,0 +1,100 @@
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+
+    "h h h h h h n n n n n n"
+    "m m m m m m m m m a a a"
+    "m m m m m m m m m a a a"
+    "as as as as s s s s s a a a"
+    "f f f f f f f f f f f f";
+}
+
+                                            /*grid areas*/
+
+header {
+    grid-area: h;
+}
+nav {
+    grid-area: n;
+}
+
+main {
+    grid-area: m;
+}
+
+.aside1 {
+    grid-area: a;
+}
+.aside2 {
+    grid-area: as;
+}
+
+section {
+    grid-area: s;
+}
+
+footer {
+    grid-area: f;
+}
+
+
+
+
+
+
+header {
+    background: skyblue;
+    border: 1px solid black;
+}
+nav {
+    background: silver;
+    border: 1px solid black;
+}
+
+main {
+    background: greenyellow;
+    border: 1px solid black;
+}
+
+.aside1 {
+    background: lightskyblue;
+    border: 1px solid black;
+}
+.aside2 {
+    background: lightskyblue;
+    border: 1px solid black;
+}
+
+section {
+    background: salmon;
+    border: 1px solid black;
+}
+
+footer {
+    background: sandybrown;
+    border: 1px solid black;
+}
+
+
+/*navigation styling*/
+
+ul {
+    display: flex;
+    font-weight: bold;
+}
+
+li {
+    list-style: none;
+    margin-left: 20px; 
+}

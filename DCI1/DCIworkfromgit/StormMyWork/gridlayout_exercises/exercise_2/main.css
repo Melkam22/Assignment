@@ -1,0 +1,146 @@
+
+
+/*.item {
+    color: black;
+    text-align: center;
+    font-size: 40px;
+}
+
+  .container {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr  3fr;
+    grid-template-rows: 150px 150px 150px;
+    background: silver;
+}
+
+.container > div {
+    border: 2px solid blue;
+} 
+.container > div:nth-child(2,3) {
+    border-collapse: collapse;
+}
+
+grid-column:nth-child(2/4) {
+    background: blue;
+} */
+
+                                        /*grid area*/
+h1 {
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(1fr 1fr 1fr 1fr);
+    grid-template-rows: 150px 150px 150px 150px;
+    grid-template-areas: 
+
+    "o o o t t t t t t th th th"
+    "f f f fi fi fi s s s s s s"
+    "se se se e e e n n n te te te"
+    "el el el e e e tw tw tw te te te";
+
+}
+
+.container > div {
+    border: 1px solid black;
+}
+
+.one {
+    grid-area: o;
+}
+
+.two {
+    grid-area: t;
+}
+
+.three {
+    grid-area: th;
+}
+
+.four {
+    grid-area: f;
+}
+
+.five {
+    grid-area: fi;
+}
+
+.six {
+    grid-area: s;    
+    }
+.seven {
+    grid-area: se;
+}
+
+.eight {
+    grid-area: e;
+}
+
+.nine {
+    grid-area: n;
+}
+
+.ten {
+    grid-area: te;
+}
+
+.eleven {
+    grid-area: el;
+}
+
+.twelve {
+    grid-area: tw;
+}
+
+                                /*rows and columns with background colors*/
+
+.one {
+    background: gray;
+}
+
+.two {
+    background: green;
+}
+
+.three {
+    background: rebeccapurple;
+}
+
+.four {
+    background: red;
+}
+
+.five {
+    background: saddlebrown;
+}
+
+.six {
+    background: darkgoldenrod;   
+    }
+.seven {
+    background: salmon;
+}
+
+.eight {
+    background: orchid;
+}
+
+.nine {
+    background: cornflowerblue;
+}
+
+.ten {
+    background: lightgreen;
+}
+
+.eleven {
+    background: rosybrown;
+}
+
+.twelve {
+    background: royalblue;
+}
+
+ 
+

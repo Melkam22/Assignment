@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+/* img {
+    display: block;
+    width: 100%;
+} */
+
+h1 {
+    text-align: center;
+}
+                                            /*main container*/
+.container {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+    grid-template-rows: 200px 200px 200px 200px;
+    border: 1px solid black;
+    grid-gap: 2px;
+}
+
+.container > div {
+    background: blue;
+}
+
+.container > div:nth-child(4) {
+    background-image: url(http://labs.jensimmons.com/2017/media/01-001/brooklynmuseum-o4266i000-86.226.18_SL1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.container > div:nth-child(5) {
+    background-image: url(http://labs.jensimmons.com/2017/media/01-001/380485.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.container > div:nth-child(10) {
+    background-image: url(http://labs.jensimmons.com/2017/media/01-001/brooklynmuseum-o44489i000-35.867_reference_SL1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.container > div:nth-child(15) {
+    background-image: url(http://labs.jensimmons.com/2017/media/01-001/436667.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
