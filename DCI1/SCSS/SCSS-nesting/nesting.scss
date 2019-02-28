@@ -1,0 +1,63 @@
+
+                            /*variables*/
+
+
+
+    
+    $one: green;
+    /* "two": blue,
+    "three": 	orange,
+    "four": 	red,
+    "five": blue,
+    "six": darkgreen,
+    "seven": lightblue */
+    $b: bold;
+
+
+
+nav {
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        background: black;
+        display: flex;
+        justify-content: flex-end;
+    
+         li {
+            width: 150px;
+            height: 50px;
+             
+         a {
+            color: green;
+            font-weight: $b;
+            text-decoration: none;
+            font-size: 25px;
+            &:hover {
+                background: green;
+                height: 50px;
+            }
+         }
+        }
+    }
+}
+
+                                /*the second div*/
+
+.one {
+    h2 {
+        color: $one;
+        font: {
+            size: 22px;
+            weight: bold;
+
+                
+        }
+    }
+    p {
+        font: {
+            size: 22px;
+            weight: bold;
+        }
+    }
+}
