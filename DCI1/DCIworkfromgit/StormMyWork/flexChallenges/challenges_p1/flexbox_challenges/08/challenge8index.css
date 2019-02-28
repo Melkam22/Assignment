@@ -1,0 +1,31 @@
+ 
+            /*display the divs on multiple rows and when resizing the page, the divs should
+                take up all available spaaces*/
+
+
+body {
+    display: flex; 
+    flex-flow: column;
+    align-items: flex-end;
+     
+}
+
+.container8 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+
+
+div {
+    height: 100px;
+    width: 150px; 
+    background-color: darkgray;
+    margin: 1em;
+    border: 2px solid red;
+    text-align: center;
+    flex-grow: 2;
+}

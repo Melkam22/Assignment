@@ -1,0 +1,26 @@
+/* Use flexbox to display all the flex items in columns. 
+Wrap items. 
+Set the alignment of the thrid item to center*/
+
+body {
+    height: 800px;
+}
+
+main{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+                        /*flex-grow and basis don't work*/
+#third {
+    flex-grow: 2;
+}
+
+div {
+    height: 100px;
+    width: 150px; 
+    background-color: darkgray;
+    margin: 1em;
+    border: 2px solid red;
+    text-align: center;
+}
