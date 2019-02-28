@@ -1,0 +1,192 @@
+
+
+                             /*variable colors*/
+
+
+ $bl: blue;
+ $or: orange;
+ $bla: black;
+ $sl: silver;
+ $skbl: skyblue;
+ $whi: white;
+ $re: red;
+
+                            /*variables margin etc*/
+
+$fl: flex;
+$bol: bold;
+$cardwidth: 350px;
+$high: 40vh;
+
+
+
+nav {
+    width: 100%;
+    $high: 50px;
+     
+    ul {
+             display: $fl;
+             justify-content: flex-end;
+             align-items: center;
+             margin-right: 30px;
+        li {
+            list-style: none;
+             
+            a {
+                text-decoration: none;
+                margin: 20px;
+
+                &:hover {
+                    color: $bla;
+                }
+                 font: {
+                    weight: $bl;
+                    size: 25px; 
+                 }
+            }
+        }
+    }
+}
+
+                                    /*first one*/
+
+header {
+    height: $high;
+    width: 100vw;
+    border: 1px solid $re;
+    background: url(header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+     
+        h1 {
+            text-align: center;
+            color: $or;
+        }
+    }
+
+
+    .cards {
+        display: $fl;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+            margin-top: 10px;
+            .card {
+                    width: $cardwidth;
+                    height: 210px;
+                    border: 2px solid $bla;
+                    border-radius: 15px 15px 15px 15px;
+                    overflow: hidden;
+                    box-sizing: border-box;
+                    background: silver;
+                img {
+                    float: left;
+                    margin-top: 20px;
+                    margin-left: 10px;
+                    margin-bottom: 5px;
+                    p {
+                        text-align: justify;
+                        padding-right: 5px;
+                    }
+                }
+            }
+    }
+
+
+                                        /*second one*/
+
+
+    .card {
+            width: $cardwidth;
+            height: 210px;
+            border: 2px solid black;
+            border-radius: 15px 15px 15px 15px;
+        img {
+            float: left;
+            margin-top: 20px;
+            margin-left: 10px;
+            margin-bottom: 5px;
+            p {
+                text-align: justify;
+            }
+        }
+    }
+
+
+                                    /*third one*/
+     
+    .card {
+            width: $cardwidth;
+            height: 210px;
+            border: 2px solid black;
+            border-radius: 15px 15px 15px 15px;
+        img {
+            float: left;
+            margin-top: 20px;
+            margin-left: 10px;
+            margin-bottom: 5px;
+            p {
+                text-align: justify;
+            }
+        }
+    }
+
+
+    main {
+        display: $fl;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 50px;
+        justify-content: space-evenly;
+         
+        aside {
+            width: 300px;
+            height: 210px;
+            border: 1px solid black;
+            margin-left: 15px;
+            p {
+                text-align: justify;
+                padding: 10px;
+            }
+        }
+
+        article {
+            width: 550px;
+            height: 210px;
+            p {
+                text-align: justify;
+            }
+        }
+    }
+
+
+                                           /*footer*/
+
+footer {
+    width: 100%;
+    height: 70px;
+    background: $skbl;
+    ul {
+        display: flex;
+        padding-top: 20px;
+        justify-content: center;
+        list-style: none;
+        a {  
+             color: white;
+             margin: 15px;
+             text-decoration: none;
+                &:hover {
+                    color: black;
+
+                &:active {
+                    color: $re;
+                }
+                }
+             font: {
+                 weight: $bl;
+                 family: helvetica;
+                 size: 28px; 
+                } 
+            }
+        }
+    }
+

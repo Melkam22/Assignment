@@ -1,0 +1,99 @@
+
+header { width: 100%;
+         height: 150px;
+         background: skyblue;
+    h1 {
+        text-align: center;
+        padding-top: 50px;
+    }
+}
+
+nav {
+    ul { display: flex;
+        justify-content: space-evenly;
+          li {
+            list-style: none;
+                font: {
+                       family: helvetica;
+                       weight: bold;
+                       size: 25px;
+                }
+                a {
+                        text-decoration: none;
+
+                        &:link{
+                            color: green;
+                        }
+                        &:visited {
+                            color: orange;
+                        }
+                        &:hover {
+                            color: springgreen;
+                        }
+                        &:active {
+                            color: red;
+                        }
+                         
+                }
+
+                
+          }
+
+    }
+}
+
+main { 
+    display: flex;
+    flex-direction: column;
+    .main-text {
+        p { text-align: justify;
+            font: {
+                family: sans-serif;
+                size: 20px;
+                }
+            }
+        }
+    }
+
+        aside {
+            p {
+                text-align: justify;
+            }
+            font: {
+                family: sans-serif;
+                size: 20px;
+            }
+        }
+
+        section {
+            display: flex;
+            flex-flow: column nowrap;
+                img {
+                    border: 2px solid black;
+                    margin: 5px;
+                    height: 400px;
+                }
+        }
+    
+footer { 
+        background: orangered;
+         ul {
+            display: flex;
+            justify-content: center;
+            li {
+    list-style: none;
+    margin: 10px;
+    font: {
+        weight: bold;
+        size: 28;
+        family: helvetica;
+            }
+                 a {
+                    text-decoration: none;
+                        &:hover {
+                        color: green;
+                    }
+                 }
+        }
+    }
+}
