@@ -1,0 +1,159 @@
+
+
+h1, h2 {
+    text-align: center;
+}
+
+
+                                /*nav bars*/
+ 
+@mixin nbar ($width, $min-height) {
+    width: $width;
+    min-height: $min-height;
+}
+@mixin ull ($display, $background, $min-height) {
+    display: $display;
+    background: $background;
+    min-height: $min-height;
+}
+@mixin lii ($list-style, $margin, $padding) {
+    list-style: $list-style;
+    margin: $margin;
+    padding: $padding;
+}
+@mixin  aa ($font-weight, $font-size, $text-decoration) {
+    font-weight: $font-weight;
+    font-size: $font-size;
+    text-decoration: $text-decoration;
+}
+
+                        /*main*/
+@mixin mainn ($text-align, $font-weight){
+    text-align: $text-align;
+    font-weight: $font-weight;
+}
+@mixin frametxt ($color, $font-size) {
+    color: $color;
+    font-size: $font-size;
+}
+
+@mixin txt2 ($color, $font-size) {
+    color: $color;
+    font-size: $font-size;
+}
+
+@mixin a-side ($color, $font-size, $font-family) {
+    color: $color;
+    font-size: $font-size;
+    font-family: $font-family;
+} 
+
+                                /*images*/
+@mixin  imgsection ($display, $justify-content) {
+    display: $display;
+    justify-content: $justify-content;
+}
+@mixin image ($width, $height, $border) {
+    width: $width;
+    height: $height;
+    border: $border;
+}
+
+                            /*footer*/
+@mixin foot ($width, $min-height) {
+    width: $width;
+    min-height: $min-height;
+    text-align: center;
+}
+@mixin uulll ($width, $min-height, $background) {
+    width: $width;
+    min-height: $min-height;
+    background: $background;
+}
+@mixin lliii ($list-style, $color, $font-weight, $font-size) {
+    list-style: $list-style;
+    color: $color;
+    font-weight: $font-weight;
+    font-size: $font-size;
+}
+@mixin  aaa ($text-decoration, $margin, $padding-top) {
+    text-decoration: $text-decoration;
+    margin: $margin;
+    padding-top: $padding-top; 
+}
+
+
+
+
+
+
+
+                                    /*nav bars*/
+nav {
+    @include nbar (100%, 120px);
+        ul {flex-direction: column;
+            align-items: center;
+        @include ull (flex, orange, 120px);
+           li { @include lii (none, 5px, 4px);
+                a { @include aa (bold, 25px, none);
+                    &:hover {
+                        color: green;
+                    &:active {
+                        color: red;
+                    }
+                }
+            }
+        }   
+    }
+}
+
+                                        /*main*/
+
+main {
+        @include mainn (justify, bold);
+        .main-text {
+            @include frametxt (blue, 28px);
+                     @include txt2 (blue, 24px);
+                    }
+                    aside {
+                        @include a-side (red, 25px, helvetica);
+                    }
+
+                }
+                    
+                                /*image section*/
+section {
+    @include imgsection (flex, space-evenly);
+        img {
+            @include image (320px, 400px, 2px solid black);
+        }
+}
+
+                                    /*footer*/
+footer {
+    @include foot (100%, 50px);
+        ul {
+            @include uulll (100%, 50px, skyblue);
+                li {
+                    @include lliii (none, white, bold, 24px);
+                       a {
+                            @include aaa (none, 5px, 5px);
+                            &:hover {
+                                color: pink;
+                            &:active {
+                                color: red;
+                            }
+                            }
+                       }
+                }
+        }
+}
+
+                            /*media query*/
+@media only screen and (max-width: 700px) {
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

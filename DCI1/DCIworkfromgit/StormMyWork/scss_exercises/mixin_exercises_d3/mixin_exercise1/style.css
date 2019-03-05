@@ -1,0 +1,141 @@
+/*header*/
+/*nav bar*/
+/*ul*/
+/*main principal*/
+/*images part*/
+/* @mixin pics ($width, $height, $border) {
+width: $width;
+height: $height;
+border: $border;
+} */
+/*aside part*/
+/*tables inside aside*/
+/*footer*/
+/*header*/
+.header {
+  height: 6rem;
+  text-align: center;
+  font-family: Verdana;
+  padding: 1.5rem; }
+
+/*nav*/
+.nav {
+  width: 100vw;
+  height: 40px; }
+  .nav li {
+    padding: 1rem;
+    list-style: none; }
+    .nav li a {
+      text-decoration: none;
+      color: black;
+      font-family: Helvetica; }
+
+/*ul*/
+.nav_links {
+  display: flex;
+  background: skyblue;
+  color: black;
+  justify-content: center; }
+
+/*the main section one with two sections*/
+.main {
+  width: 100%;
+  height: 100%; }
+  .main .section_text {
+    text-align: justify;
+    width: 100%; }
+    .main .section_text .section_images {
+      flex-wrap: wrap;
+      display: flex;
+      flex-direction: row;
+      width: 30%;
+      height: 30vh;
+      border: 2px solid black;
+      position: relative;
+      flex-wrap: wrap;
+      /* .section_images {
+                     @include pics (30%, 30vh, 1px solid black);
+            } */ }
+
+/*aside*/
+.aside {
+  display: flex;
+  width: 100%;
+  min-height: 50vh;
+  justify-content: space-evenly;
+  flex-wrap: wrap; }
+  .aside .first_aside {
+    width: 450px;
+    height: 130px;
+    border: 1px solid black; }
+  .aside .second_aside {
+    width: 450px;
+    height: 130px;
+    border: 1px solid black; }
+  .aside .third_aside {
+    width: 450px;
+    height: 130px;
+    border: 1px solid black; }
+  .aside .fourth_aside {
+    width: 450px;
+    height: 130px;
+    border: 1px solid black; }
+
+/*footer*/
+.footer {
+  width: 100%;
+  height: 50px;
+  background: orange; }
+  .footer .footer_links {
+    display: flex;
+    justify-content: center; }
+    .footer .footer_links li {
+      margin-left: 20px;
+      padding-top: 10px;
+      list-style: none;
+      justify-items: center;
+      font-weight: bold;
+      font-size: 25px; }
+      .footer .footer_links li a {
+        text-decoration: none; }
+
+/*media queries*/
+@media only screen and (max-width: 550px) {
+  .main .section_images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100vw; }
+    .main .section_images img {
+      border: 2px solid black;
+      border-radius: 15px 15px 15px 15px; }
+  .aside {
+    width: 100vw;
+    height: 45rem;
+    margin-top: 10px; } }
+
+@media only screen and (min-width: 551px) and (max-width: 990px) {
+  .main .section_images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; }
+  .section_text {
+    background: blue; }
+  .first_aside, .second_aside, .third_aside, .fourth_aside {
+    background: orange;
+    padding: 5px;
+    margin-top: 10px; } }
+
+@media only screen and (min-width: 990px) {
+  .main .section_images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100vw; }
+  .section_text {
+    background: grey; }
+  .first_aside, .second_aside, .third_aside, .fourth_aside {
+    background: green;
+    padding: 10px;
+    border-radius: 15px 15px 15px 15px;
+    margin-top: 10px; } }

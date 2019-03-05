@@ -1,0 +1,244 @@
+
+                                /*header*/
+@mixin header {
+    height: 6rem;
+    text-align: center;
+    font-family: Verdana;
+    padding: 1.5rem;
+}
+
+                              /*nav bar*/
+    
+@mixin  navbar ($width, $height) {
+    width: $width;
+    height: $height;
+}
+                            /*ul*/
+@mixin ul ($display, $background, $color, $justify-content) {
+    display: $display;
+    background: $background;
+    color: $color;
+    justify-content: $justify-content;
+}
+                            /*main principal*/
+
+@mixin principal ($width, $height) {
+    width: $width;
+    height: $height;
+ }
+
+                            /*images part*/
+@mixin image ($display, $flex-direction, $width, $min-height, $border) {
+    display: $display;
+    flex-direction: $flex-direction;
+    width: $width;
+    height: $min-height;
+    border: $border;
+    position: relative;
+    flex-wrap: wrap; 
+} 
+
+/* @mixin pics ($width, $height, $border) {
+width: $width;
+height: $height;
+border: $border;
+} */
+
+                                    /*aside part*/
+
+@mixin textframe ($display, $width, $min-height, $justify-content) {
+    display: $display;
+    width: $width;
+    min-height: $min-height;
+    justify-content: $justify-content;
+    flex-wrap: wrap;
+}
+                            /*tables inside aside*/
+@mixin table ($width, $height, $border) {
+    width: $width;
+    height: $height;
+    border: $border;    
+}
+
+@mixin table ($width, $height, $border) {
+    width: $width;
+    height: $height;
+    border: $border;    
+}
+
+@mixin table ($width, $height, $border) {
+    width: $width;
+    height: $height;
+    border: $border;    
+}
+
+@mixin table ($width, $height, $border) {
+    width: $width;
+    height: $height;
+    border: $border;    
+} 
+
+                                /*footer*/
+@mixin foot ($width, $height, $background) {
+    width: $width;
+    height: $height;
+    background: $background;
+}
+
+@mixin foot-content ($display, $justify-content) {
+    display: $display;
+    justify-content: $justify-content;
+}
+
+@mixin lii ($list-style, $justify-items, $font-weight, $font-size) {
+    list-style: $list-style;
+    justify-items: $justify-items;
+    font-weight: $font-weight;
+    font-size: $font-size;
+}
+
+@mixin aaa ($text-decoration, $justify-content) {
+    text-decoration: $text-decoration;
+    justify-content: $justify-content;
+}
+
+
+
+
+
+ /*header*/
+ .header {
+    @include header;
+}
+
+                                        /*nav*/
+.nav {
+    @include navbar (100vw, 40px);
+    li {
+        padding:1rem;
+        list-style: none;
+                a {
+                    text-decoration: none;
+                    color: black;
+                     font-family: Helvetica;
+                }
+            }
+}
+                                        /*ul*/
+.nav_links {
+    @include ul (flex, skyblue, black, center);
+}
+
+                    /*the main section one with two sections*/
+.main {
+    @include principal (100%, 100%);
+        .section_text {
+            text-align: justify;
+            width: 100%;
+            .section_images {
+                flex-wrap: wrap;
+                @include image (flex, row, 30%, 30vh, 2px solid black);
+                /* .section_images {
+                     @include pics (30%, 30vh, 1px solid black);
+            } */
+        }
+        }
+}
+
+                            /*aside*/
+ .aside {
+     @include textframe (flex, 100%, 50vh, space-evenly);
+        .first_aside {
+            @include table (450px, 130px, 1px solid black);
+        }
+        .second_aside {
+            @include table (450px, 130px, 1px solid black);
+        }
+        .third_aside {
+            @include table (450px, 130px, 1px solid black);
+        }
+        .fourth_aside {
+            @include table (450px, 130px, 1px solid black);
+        }
+} 
+       
+                                /*footer*/
+    
+.footer {
+    @include foot (100%, 50px, orange);
+            .footer_links {
+                 @include foot-content (flex, center);
+                     li {
+                         margin-left: 20px;
+                         padding-top: 10px;
+                         @include lii (none, center, bold, 25px);
+                            a {
+                                text-decoration: none;
+                            }
+            }
+        }
+    }
+
+
+
+
+
+                                /*media queries*/
+
+  
+@media only screen and (max-width: 550px) {
+    .main .section_images {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100vw;
+            img {
+                border: 2px solid black;
+                border-radius: 15px 15px 15px 15px;
+    }
+}
+             .aside {
+                  width: 100vw;
+                  height: 45rem;
+                  margin-top: 10px;
+        }
+    }
+
+@media only screen and (min-width: 551px) and (max-width: 990px) {
+    .main .section_images {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .section_text {
+        background: blue;
+    }
+    .first_aside, .second_aside, .third_aside, .fourth_aside {
+        background: orange;
+        padding: 5px;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (min-width: 990px) {
+    .main .section_images {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 100vw;
+    }
+    .section_text {
+        background: grey;
+    }
+    .first_aside, .second_aside, .third_aside, .fourth_aside {
+        background: green;
+        padding: 10px;
+        border-radius: 15px 15px 15px 15px;
+        margin-top: 10px;
+    }
+}
+
+
+ 
+
+

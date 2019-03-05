@@ -1,0 +1,79 @@
+
+
+
+@mixin  container ($display, $flex-direction, $width, $height, $background) {
+    display: $display;
+    flex-direction: $flex-direction;
+    width: $width;
+    height: $height;
+    background: $background;
+}
+
+@mixin  ball1 ($width, $height, $background) {
+    width: $width;
+    height: $height;
+    background: $background;
+}
+ 
+@mixin  ball2 ($width, $height, $background) {
+    width: $width;
+    height: $height;
+    background: $background;
+}
+
+@mixin  ball3 ($width, $height, $background) {
+    width: $width;
+    height: $height;
+    background: $background;
+}
+
+
+
+
+
+
+.container {
+    @include container (flex, column, 100vw, 100vh, silver);
+
+            .ball1 {
+                @include ball1 (150px, 150px, blue);
+                margin: 30px;
+                border-radius: 95px 95px 95px 95px;
+                display: block;
+                overflow: auto;
+                transition: 7s;
+                transition-timing-function: ease-in-out;
+            
+                &:hover {
+                    transform: translate(1100px, 0px) rotate(360deg);
+            }
+        }
+        
+                .ball2 {
+                    margin: 30px;
+                    @include ball2 (150px, 150px, green);
+                    border-radius: 95px 95px 95px 95px;
+                    display: block;
+                    overflow: auto;
+                    transition: 7s;
+                    transition-timing-function: ease-in-out;
+            
+                &:hover {
+                    transform: translate(1100px, 0px) rotate(360deg);
+                }
+            }
+                  .ball3 {
+                    margin: 30px;
+                    @include ball3 (150px, 150px,orange);
+                    border-radius: 95px 95px 95px 95px;
+                  
+                    display: block;
+                    overflow: auto;
+                    transition: 7s;
+                    transition-timing-function: ease-in-out;
+            
+                &:hover {
+                    transform: translate(1100px, 0px) rotate(360deg);
+                }
+            }
+        }

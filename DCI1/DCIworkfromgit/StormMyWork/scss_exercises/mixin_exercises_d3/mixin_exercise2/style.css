@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background: silver; }
+  .container .ball1 {
+    width: 150px;
+    height: 150px;
+    background: blue;
+    margin: 30px;
+    border-radius: 90px 90px 90px 90px;
+    display: block;
+    overflow: auto;
+    transition: 4s;
+    transition-timing-function: ease-in-out; }
+    .container .ball1:hover {
+      transform: translate(1100px, 0px) rotate(360deg); }
+  .container .ball2 {
+    margin: 30px;
+    width: 150px;
+    height: 150px;
+    background: green;
+    border-radius: 95px 95px 95px 95px;
+    display: block;
+    overflow: auto;
+    transition: 4s;
+    transition-timing-function: ease-in-out; }
+    .container .ball2:hover {
+      transform: translate(1100px, 0px) rotate(360deg); }
+  .container .ball3 {
+    margin: 30px;
+    width: 150px;
+    height: 150px;
+    background: orange;
+    border-radius: 90px 90px 90px 90px;
+    display: block;
+    overflow: auto;
+    transition: 4s;
+    transition-timing-function: ease-in-out; }
+    .container .ball3:hover {
+      transform: translate(1100px, 0px) rotate(360deg); }
