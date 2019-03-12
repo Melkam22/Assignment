@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" />
+<style>
+    
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(asset/ocean.jpg);
+    background-position: center;
+    background-size: cover;
+}
+h3 {
+    text-align: center;
+    margin-top: 2%;
+    color: green;
+    font-weight: bold;
+}
+
+h5, h4 {
+    text-align: center;
+}     
+                              /*navbar inside the slide*/
+nav {
+    width: 85%;
+    background: rgba(234,216,165,.5);
+    position: fixed;
+    top: 0;
+    margin-left: 8%;
+    z-index: 1;
+    box-shadow: 5px 3px 5px 0px black;
+}
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+li {
+    list-style: none;
+}
+a {
+    font-size: 22px;
+    margin-left: 15px;
+    color: black;
+    font-weight: bold;
+}
+.empty {
+    width: 100%;
+    height: 7vh;
+}
+
+                            /* who am I with effect*/
+.container1 {
+    width: 90%;
+    min-height: 40vh;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10%;
+    margin-left: 5%;
+    justify-content: space-evenly;
+}
+                               /*  first who am I box with hover effect */
+.one {
+    width: 310px;
+    height: 360px;
+    position: relative;
+    overflow: hidden;
+    background: rgba(90,64,82,0.6);
+    box-sizing: border-box;
+    perspective: 1000px;
+    transition: 2s ease;   
+} 
+.one img {
+    width: 100%;
+    transition: 2s;
+    transform-origin: 0 100%;
+}
+.content1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    transform: rotateX(-90deg);
+    transform-origin: 0% -100%;
+    transition: 2s;
+}
+.content1 h5 {
+    text-align: center;
+    background: rgba(213,132,57,0.9);
+}
+.content1 p {
+    text-align: justify;
+    background: rgba(230,226,239,0.8);
+    padding: 10px;
+    padding-top: 60px;
+    border-radius: 5px;
+}
+.one:hover img {
+    transform: rotateX(-90deg);
+    opacity: 0;
+}
+.one:hover .content1 {
+    transform: rotateX(0deg);
+    opacity: 1;
+    transition-delay: 2s;
+}
+
+                        /*  second who am I box with hover effect */
+
+.two {
+    width: 310px;
+    height: 360px;
+    position: relative;
+    overflow: hidden;
+    background: rgba(90,64,82,0.6);
+    box-sizing: border-box;
+    perspective: 1000px;
+    transition: 2s ease;   
+} 
+.two img {
+    width: 100%;
+    transition: 2s;
+    transform-origin: 0 100%;
+}
+.content2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    transform: rotateX(-90deg);
+    transform-origin: 0% -100%;
+    transition: 2s;
+}
+.content2 h5 {
+    text-align: center;
+    background: rgba(213,132,57,0.9);
+}
+.content2 p {
+    text-align: justify;
+    background: rgba(230,226,239,0.8);
+    padding: 10px;
+    padding-top: 80px;
+    border-radius: 5px;
+}
+.two:hover img {
+    transform: rotateX(-90deg);
+    opacity: 0;
+}
+.two:hover .content2 {
+    transform: rotateX(0deg);
+    opacity: 1;
+    transition-delay: 2s;
+}
+                               /*  third who am I box with hover effect */
+.three {
+    width: 310px;
+    height: 360px;
+    position: relative;
+    overflow: hidden;
+    background: rgba(90,64,82,0.6);
+    box-sizing: border-box;
+    perspective: 1000px;
+    transition: 2s ease;   
+} 
+.three img {
+    width: 100%;
+    transition: 2s;
+    transform-origin: 0 100%;
+}
+.content3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    transform: rotateX(-90deg);
+    transform-origin: 0% -100%;
+    transition: 2s;
+}
+.content3 h5 {
+    text-align: center;
+    background: rgba(213,132,57,0.9);
+}
+.content3 p {
+    text-align: justify;
+    background: rgba(230,226,239,0.8);
+    padding-top: 120px;
+    padding: 10px;
+
+}
+.three:hover img {
+    transform: rotateX(-90deg);
+    opacity: 0;
+}
+.three:hover .content3 {
+    transform: rotateX(0deg);
+    opacity: 1;
+    transition-delay: 2s;
+}
+
+
+ 
+
+                                    /* web experience*/
+.container2 {
+    width: 90%;
+    height: 340px;
+    background-image: url(asset/forest-ice.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+     
+    perspective: 1000;
+    transition: 1s ease;
+    position: relative;
+    margin-left: 5%;
+    margin-top: 1%;
+}
+.container2 img {
+    width: 100%;
+    transition: 1s;
+    /* transform-origin: 0 100%; */
+}
+
+.webexp {
+    width: 89vw;
+    height: 378px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: helvetica;
+    color: black;
+   /*  z-index: 1; */
+    opacity: 0;
+    background: rgba(27,122,251,0.8);
+    padding: 20px 20px;
+    text-align: justify;
+    transform: rotateX(100deg);
+    transform-origin: 50% 50%;
+    transition: 1s;
+}
+.webexp h3 {
+    line-height: 40px;
+    text-align: center;
+    color: darkgrey;
+    font-weight: bold;
+}
+.webexp p {
+    line-height: 22px;
+    text-align: justify;
+    font-size: 23px;
+}
+.container2:hover img {
+    /* transform: rotateY(0deg); 
+    opacity: 1;*/
+}
+.container2:hover .webexp {
+    transform: rotateY(30deg);
+    border-radius: 25px 25px 25px 25px;
+    justify-content: center;
+    opacity: 1;
+    transition-delay: 1s;
+}
+
+                                    /* general-experience */
+ 
+.container3 {
+    width: 90%;
+    height: 270px;
+    position: relative;
+    margin-left: 5%;
+    margin-top: 2%;
+    background-image: url(asset/au.jpg);
+    background-position: bottom;
+    background-size: cover;
+    color: orange;
+    overflow: hidden;
+    perspective: 1000;
+    transition: 2s ease;
+}
+.container3 img {
+    width: 100%;
+    transition: 2s;
+    transform-origin: 0% 100%; 
+}
+.genexp {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    box-sizing: border-box;
+    z-index: 1;
+    opacity: 0;
+    background: rgba(236, 223, 239, 0.8);
+    color: black;
+    padding: 5px 10px;
+    text-align: justify;
+    transform: rotateX(-95deg);
+    transform-origin: 50% 50%;   
+    transition: 2s;
+}
+.genexp h3 {
+    line-height: 40px;
+    text-align: center;
+    color: orangered;
+    font-weight: bold;
+}
+.genexp p {
+    line-height: 30px;
+    text-align: justify;
+    font-size: 22px;
+}
+.container3:hover img {
+    transform: rotateY(90deg);
+    opacity: 0;   
+}
+.container3:hover .genexp {
+    transform: rotateY(0deg);
+    opacity: 1;
+    transition-delay: 2s;
+}
+
+
+                                   /* Extra-curricular */
+.container4 {
+    width: 90%;
+    min-height: 460px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: 5%;
+    margin-top: 1%;
+}
+                            /* 3 boxes with hover effect */
+.container4 .extra1 {
+    width: 350px;
+    height: 350px;
+    position: relative;
+    background: rgba(200,200,230,0.6);
+    box-sizing: border-box;
+    
+}
+.container4 .extra1 .imgbox {
+    position: relative;
+    overflow: hidden;
+}
+.container4 .extra1 .imgbox img {
+    max-width: 100%;
+    transition: transform 2s;
+}
+.container4 .extra1:hover .imgbox img {
+    transform: scale(1.2);
+}
+.container4 .extra1 .details {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    left: 5px;
+    background: rgba(200,200,230,0.8);
+    transform: scaleX(0);
+    transition: transform -5s;
+}
+.container4 .extra1:hover .details {
+    transform: scaleX(1);
+}
+.container4 .extra1 .details .content {
+    position: absolute;
+    top: 5%;
+    /* transform: translateY(-5%); */
+    text-align: justify;
+    padding: 5px 8px;
+    color: black;
+}
+.container4 .extra1 .details .content h4 {
+    padding: 0px 5px;
+    color: green;
+}
+
+.container4 .extra2 {
+    width: 350px;
+    height: 350px;
+    position: relative;
+    background: rgba(200,200,230,0.8);
+    box-sizing: border-box;
+}
+.container4 .extra2 .imgbox {
+    position: relative;
+    overflow: hidden;
+}
+.container4 .extra2 .imgbox img {
+    max-width: 100%;
+    transition: transform 2s;
+}
+.container4 .extra2:hover .imgbox img {
+    transform: scale(1.2);
+}
+.container4 .extra2 .details {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    left: 5px;
+    background: rgba(200,200,230,0.8);
+    transform: scaleY(0);
+    transition: transform -5s;
+}
+.container4 .extra2:hover .details {
+    transform: scaleY(1);
+}
+.container4 .extra2 .details .content {
+    position: absolute;
+    top: 5%;
+    transform: translateY(-5%);/* 
+    */ text-align: justify;
+    padding: 2px 5px;
+    color: black;
+}
+.container4 .extra2 .details .content h4 {
+    padding: 0px 5px;
+    color: green;
+}
+                               /* the third one */
+
+.container4 .extra3 {
+    width: 350px;
+    height: 350px;
+    position: relative;
+    background: rgba(200,200,230,0.8);
+    box-sizing: border-box;
+}
+.container4 .extra3 .imgbox {
+    position: relative;
+    overflow: hidden;
+}
+.container4 .extra3 .imgbox img {
+    max-width: 100%;
+    transition: transform 2s;
+}
+.container4 .extra3:hover .imgbox img {
+    transform: scale(1.2);
+}
+.container4 .extra3 .details {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    left: 5px;
+    background: rgba(200,200,230,0.8);
+    transform: scaleY(0);
+    transition: transform -5s;
+}
+.container4 .extra3:hover .details {
+    transform: scaleY(1);
+}
+.container4 .extra3 .details .content {
+    position: absolute;
+    top: 5%;
+    /* transform: translateY(-5%); */
+    text-align: justify;
+    padding: 2px 5px;
+    color: black;
+}
+.container4 .extra3 .details .content h4 {
+    padding: 0px 5px;
+    color: green;
+}
+
+                                        /* Portfolio */
+.container5 {
+    width: 92%;
+    min-height: 700px;
+   /*  border: 1px solid black; */
+    margin-left: 5%;
+    margin-top: 1%;
+} 
+
+.portfolio {
+    width: 79vw;
+    min-height: 20vh;
+    margin-left: 6%;
+    padding: 5px;
+    text-align: justify;
+    background: rgba(234,216,165,.5);
+}
+.portfolio:hover {
+    color: blue;
+    font-weight: bold;
+}
+.frame {
+    width: 90vw;
+    height: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+    justify-content: space-around;
+}
+                            /* four portfolio boxes with hover effect */
+
+.port1 {
+    width: 390px;
+    height: 320px;
+    position: relative;
+    background-image: url(asset/forest.jpg);
+    background-position: center;
+    background-size: cover;
+    transform: translate(0%, 0%);
+    overflow: hidden;
+}
+.port1 img {
+    width: 100%;
+    height: 100%;
+    transition: 12s;
+}
+.port1 .textbox {
+    position: fixed;
+    bottom: -100%;
+    width: 100%;
+    height: 100%;
+    transition: 12s;
+    box-sizing: border-box;
+}
+.port1 .textbox h3 {
+    text-align: center;
+    background: silver;
+    padding: 10px 10px;
+}
+.port1 .textbox p {
+    text-align: center;
+    background: gold;
+    color: black;
+    padding: 10px 10px;
+}
+.port1:hover .textbox {
+    bottom: -5%;
+}
+.port1:hover img {
+    transform: translateY(99%);
+}
+
+
+                            /*  second portfolio box */
+.port2 {
+    width: 390px;
+    height: 320px;
+    position: relative;
+    background-image: url(asset/forest.jpg);
+    background-position: center;
+    background-size: cover;
+    transform: translate(0%, 0%);
+    overflow: hidden;
+}
+.port2 img {
+    width: 100%;
+    height: 100%;
+    transition: 12s;
+}
+.port2 .textbox {
+    position: fixed;
+    bottom: -100%;
+    width: 100%;
+    height: 100%;
+    transition: 12s;
+    box-sizing: border-box;
+}
+.port2 .textbox h3 {
+    text-align: center;
+    background: silver;
+    padding: 10px 10px;
+}
+.port2 .textbox p {
+    text-align: center;
+    background: gold;
+    color: black;
+    padding: 10px 10px;
+}
+.port2:hover .textbox {
+    bottom: -5%;
+}
+.port2:hover img {
+    transform: translateY(99%);
+}
+
+                                /*  third portfolio box */
+.port3 {
+    width: 390px;
+    height: 320px;
+    position: relative;
+    background-image: url(asset/forest.jpg);
+    background-position: center;
+    background-size: cover;
+    transform: translate(0%, 0%);
+    overflow: hidden;
+}
+.port3 img {
+    width: 100%;
+    height: 100%;
+    transition: 12s;
+}
+.port3 .textbox {
+    position: fixed;
+    bottom: -100%;
+    width: 100%;
+    height: 100%;
+    transition: 12s;
+    box-sizing: border-box;
+}
+.port3 .textbox h3 {
+    text-align: center;
+    background: silver;
+    padding: 10px 10px;
+}
+.port3 .textbox p {
+    text-align: center;
+    background: gold;
+    color: black;
+    padding: 10px 10px;
+}
+.port3:hover .textbox {
+    bottom: -5%;
+}
+.port3:hover img {
+    transform: translateY(99%);
+}
+
+
+                            /*  third portfolio box */
+.port4 {
+    width: 390px;
+    height: 320px;
+    position: relative;
+    background-image: url(asset/forest.jpg);
+    background-position: center;
+    background-size: cover;
+    transform: translate(0%, 0%);
+    overflow: hidden;
+}
+.port4 img {
+    width: 100%;
+    height: 100%;
+    transition: 12s;
+}
+.port4 .textbox {
+    position: fixed;
+    bottom: -100%;
+    width: 100%;
+    height: 100%;
+    transition: 12s;
+    box-sizing: border-box;
+}
+.port4 .textbox h3 {
+    text-align: center;
+    background: silver;
+    padding: 10px 10px;
+}
+.port4 .textbox p {
+    text-align: center;
+    background: gold;
+    color: black;
+    padding: 10px 10px;
+}
+.port4:hover .textbox {
+    bottom: -5%;
+}
+.port4:hover img {
+    transform: translateY(99%);
+}
+
+
+                                        /* empty one */
+.empty1 {
+    width: 100%;
+    height: 120px;
+}
+                                        /*footer*/
+.foot {
+    width: 100%;
+    min-height: 11%;
+    display: flex;
+    justify-content: space-evenly;
+    background: silver;
+    margin-top: 150px;
+    position: fixed;
+    bottom: 0;
+}
+.footone {
+    width: 27vw;
+    height: 11vh;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+}
+.ione:hover {
+    color: blue;
+}
+.itwo:hover {
+    color: blue;
+}
+.ithree:hover {
+    color: blue;
+}
+.ifour:hover {
+    color: blue;
+}
+.foottwo {
+    width: 27vw;
+    height: 11vh;
+    text-align: center;
+    margin-top: 15px;
+}
+.copyright {
+    padding-top: 24px;
+}
+.footthree {
+    width: 27vw;
+    min-height: 11vh;
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+}
+
+                                /* bootstrap */
+.bootstrap {
+    width: 37vw;
+    min-height: 24vh;
+    margin-left: 30%;
+    margin-top: 10px;
+    background: rgba(234,216,165,.5);
+    padding: 5px;
+}
+.submit {
+    margin-left: 100px;
+    margin-top: 8px;
+}
+
+
+                                    /* goup */
+.goup {
+    position: fixed;
+    bottom: 150px;
+}
+                                     
+
+</style>
+</head>
+<body>
+                                <!--navbars inside the slide nav-->
+<nav> 
+    <ul>
+        <li><a href="landingpage.html"><i class="fa fa-home fa-2x" aria-hidden="true"></i></a></li>
+        <li><a href="#college">Who am I</a></li>
+        <li><a href="#web">Web-Experience</a></li>
+        <li><a href="#general">General-Experience</a></li>
+        <li><a href="#extra">Extra-Curricular</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#news"><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a></li>
+    </ul>
+</nav>
+
+<div class="empty">
+
+</div>
+                                <!-- who am I -->
+              <h3>Who am I</h3>
+<div class="container1">
+<div class="one">
+        <img src="asset/highschool.jpg" width="310px" height="360px">
+    <div class="content1"> 
+    <h5>Elementary &<br>High-school</h5>
+    <p>
+        I have accomplished my elementary and high school studies in 
+        Addis-Ababa Ethiopia. I have studied my junior high in Ras Abebe
+        Aregay school and for high school I joined Teferi Mekonnen high
+        school where I have completed my secondary education before joining
+        the university.
+</div> 
+</div>
+
+<div class="two">
+        <img src="asset/aau.jpg" width="310px" height="360px">
+    <div class="content2"> 
+    <h5 id="college">College & <br>University</h5>
+    <p>
+        After high-school, first, I have joined Addis-Ababa University 
+        School of Commerce and I have studied Banking and Finance. Later,
+        In the same university, I have joined the faculty of Foreign 
+        Languages and I have studied French Language and Communication.
+    </p>
+</div>
+</div>
+
+<div class="three">
+        <img src="asset/alliance.jpg" width="310px" height="360px">
+    <div class="content3"> 
+    <h5>Work & <br>Live</h5>
+    <p>
+        <br>
+        <br>
+        Thanks to my good performance during my undergrad studies I had 
+        the chance to get scholarship to persue my studies in France. In 
+        France, I joined the University of Rouen and I enrolled in the 
+        Department of Languages and Litterature and I have studied French 
+        Language and Pedagogie in master level. 
+        </p>
+</div>
+</div>
+
+</div>
+
+                                <!-- Web-Experience -->
+
+     <h3 id="web">Web-Experience</h3>
+<div class="container2">
+    <img src=""> <!-- asset/abay.jpg" width="90%" height="380px"> -->
+
+<div class="webexp">
+        <h3>Web-Experience</h3>
+    <p> 
+        I did not have any previous web-development experience, due to this 
+        reason the first few days of my plunge to this discipline were not very 
+        easy. But, since I am well armed with patience, interest and curiosity 
+        the challenge didn't last much before it has transformed to fun. I am 
+        constantly having fun programming and I am motivated and determined to 
+        do a lot of fun stuff as I continue learning more and more new things. 
+    </p>
+</div>
+</div>
+<br>
+<br>
+
+                                    <!-- General-Experience -->
+    <h3 id="general">General-Experience</h3>
+<div class="container3">
+<img src="asset/alliance1.jpg" width="90%" height="100%">
+<div class="genexp"> 
+<h3>General-Experience</h3>
+<p>
+    I joined programming coming from a complete foreign discipline. As a language 
+    teacher and translator I have worked, permanently at Addis-Ababa University
+    and in various international organizations as a part-timer and private-contractor
+    for more than seven years. I have more than seven years experience as a 
+    teacher and as an Hybrid /semi online program tutor/ on a continental level.
+    Alliance-Ethio-francaise, African-Union, the German Aid Agency /GIZ/ etc. are 
+    among the organizations where I had the chance to work during different 
+    duration of time.
+</p>
+</div>
+</div>
+                                     <!-- Extra-curricular-->
+    <h3 id="extra">Extra-Curricular</h3>
+ <div class="container4">
+        <div class="extra1">
+            <div class="imgbox">
+                    <img src="asset/socialmedia.jpg" height="350px">
+            </div>
+        <div class="details">
+            <div class="content">
+                <h4>Reading, Discussing <br> and blogging on
+                socialmedias</h4>
+                <p>I love discussing and reflecting ideas especially on 
+                    current events. Hence, I have one facebook page on which
+                    I invite friends and all interested people to share and
+                    exchange views and I deas. Thoug this days I am not 
+                    animating it on a regular basis due to my hectic learning
+                    schedule I still have my page and more than 2400 followers
+                    with whom I keep in touch once in a while.
+                </p>
+            </div>
+        </div>
+
+        </div>
+        <div class="extra2">
+                <div class="imgbox">
+                        <img src="asset/ embi.png" width="370px" height="350px">
+                </div>
+            <div class="details">
+                <div class="content">
+                    <h4>Translation</h4>
+                    <p> I loved exercising translation. As a translator one can
+                        enjoy an enriching and thoughtful experience. Beside practicing 
+                        translation as a profession I do it as well as a hoby. I 
+                        enjoy practicing this profession because it allows me to read and learn a lot. 
+                        I have already translated yet to be published book from french 
+                        to amharic in 2012.
+                    </p>
+                </div>
+            </div>
+    
+            </div>
+
+        <div class="extra3">
+                <div class="imgbox">
+                        <img src="asset/tekarno.jpg" width="370px" height="350px">
+                </div>
+            <div class="details">
+                <div class="content">
+                    <h4>Publishing</h4>
+                    <p>By saving my spare time from my hectic work routine I 
+                        managed to conduct some research and publish a book. The 
+                    The book is about the concept of democracy from its origin to 
+                    the modern time. And, I made a parallel as well with the  
+                    socio-economical situation in my country.
+                    
+                </p>
+                </div>
+        </div>
+        </div>
+    </div>
+
+                                    <!-- Portfolio -->
+
+    <h3 id="portfolio">Portfolio</h3>
+<div class="container5">
+    <div class="portfolio">
+        Thess are lists of works that I have accomplished using only Html
+        and Css aPortfolio. Since, I am a beginner in the field I could 
+        not be able to show you as much work as I would have loved. But, 
+        I have put these to show you that I am very motivated and capable 
+        of accomplishing more when I will learn more programming languages.
+
+    </div>
+                <!-- four portfolio boxes with hover effect -->
+
+    <div class="frame">
+        <div class="port1"> 
+            <img src="asset/addis.jpg" width="390px" height="320px"> 
+      
+    <div class="textbox">
+            <h3>Portfolio one</h3> 
+        <p>First hover effect of portfolio</p> 
+    </div>
+</div>
+                        <!-- second box -->
+
+    <div class="port2">
+        <img src="asset/farm.jpg" width="390px" height="320px">
+        <div class="textbox">
+            <h3>Portfolio two</h3>
+            <p>Portfolio two the text part</p>
+        </div>
+    </div>
+
+                                 <!-- third box -->
+    <div class="port3">
+            <img src="asset/farm.jpg" width="390px" height="320px">
+            <div class="textbox">
+                <h3>Portfolio three</h3>
+                <p>Portfolio three the text part</p>
+            </div>
+    </div>
+
+                                    <!-- fourth box -->
+    <div class="port4">
+            <img src="asset/farm.jpg" width="390px" height="320px">
+            <div class="textbox">
+                <h3>Portfolio four</h3>
+                <p>Portfolio four the text part</p>
+            </div>
+    </div>
+</div>
+</div>
+
+                        <!-- Newsletter -->
+<div class="bootstrap"> 
+        <h3 id="news">Sign-up for Newsletter</h3>
+            <form>
+                <label>Name</label>
+            <input type="text" name="name" placeholder="Ashenafi"><br>
+            <label>Email</label>
+            <input type="email" name="email" placeholder="me@gmail.com"><br>
+            <input class="submit" type="submit" value="Sign-up!">
+    
+            </form>
+    </div>
+
+
+
+
+                                    <!-- goup -->
+
+<a class="goup" href="#top"><i class="fa fa-chevron-circle-up fa-2x" aria-hidden="true"></i></a>
+ 
+<div class="empty1">
+
+</div>
+<footer class="foot">
+    <div class="footone">
+            <p class="ione"><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></p>
+            <p class="itwo"><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></p>
+            <p class="ithree"><a href="https://github.com/Melkam22?tab=repositories"target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></p>
+           <p class="ifour"><a href="" target="_blank"><i class="fa fa-skype fa-2x" aria-hidden="true"></i></a></p> 
+
+
+
+           <!--  <p class="ione"><i class="fa fa-facebook fa-3x" aria-hidden="true"></i></p>
+            <p class="itwo"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></p>
+            <p class="ithree"><i class="fa fa-github fa-3x" aria-hidden="true"></i></p>
+            <p class="ifour"><i class="fa fa-skype fa-3x" aria-hidden="true"></i></p> -->
+    </div>
+    <div class="foottwo">
+        <p class="copyright">
+                <i class="fa fa-copyright fa-2x" aria-hidden="true"></i>  Ashenafi 2019
+        </p>
+
+    </div>
+    <div class="footthree">
+        <h5>Terms of use</h5>
+        <h5>Email address</h5>
+
+    </div>
+</footer>
+
+</body>
+</html>
