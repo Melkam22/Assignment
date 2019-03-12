@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+                        /*color variables */
+$gr: green;
+$whi: white;
+$sil: silver;
+$bl: blue;
+$yel: yellow;
+$re: red;
+$bla: black;
+
+                     /*    other variables */
+$bo: bold;
+$cen: center;
+$fl: flex;
+$ro: row;
+$col: column;
+
+.main {
+    width: 100vw;
+    height: 100vh;
+        .image {
+            width: 100%;
+            height: 100%;
+            display: $fl;
+            flex-direction: $col;
+            background-image: url(asset/countryside.jpg);
+            background-position: center;
+            background-size: cover;
+            justify-content: space-evenly;
+                #symb {
+                    margin-left: 70px;
+                    width: 120px;
+                    height: 120px;
+                    border-radius: 90px 90px 90px 90px;
+                    background-image: url(asset/lemon.jpg);
+                    background-position: center;
+                    background-size: cover;
+                    animation-delay: 1s;
+                    animation-duration: 8s;
+                }
+                .ashu {
+                    margin-left: 50px;
+                    font-weight: $bo;
+                }
+                    box2 {
+                        width: 450px;
+                        height: 40px;
+                        align-self: center;
+                        animation-delay: 1s;
+                        animation-duration: 7s;
+                            h1 {
+                                font-size: 40px;
+                                font-weight: $bo;
+                            }
+                    }
+                    box3 {
+                        width: 400px;
+                        height: 40px;
+                        align-self: center;
+                        animation-delay: 1s;
+                        animation-duration: 7s;
+                        h2 {
+                            font-size: 32px;
+                            font-weight: $bo;
+                        }
+                    }     
+
+                    button {
+                        width: 150px;
+                        height: 40px;
+                        align-self: center;
+                    }
+                 
+        }
+    }
+/* 
+    .animation {
+        background: white;
+            width: 20ch;
+            margin-left: 300px;
+             .animation h3 {
+                 overflow: hidden;
+                 white-space: nowrap;
+                 margin: 0 auto;
+                 letter-spacing: .25em;
+                 border-right: 4px solid orange;
+                 animation: printing 3.5s steps (10, end)
+                 infinite, blink .5s step-end infinite;
+             }
+             @keyframes printing {
+                 from {
+                     width: 0;
+                 }
+                 to {
+                     width: 100%;}
+                 }
+                 @keyframes blink {
+                     from, to {
+                         border-color: transparent;
+                        }
+                        50% {
+                            border-color: blue;
+                        }
+                     }
+                 } */
+
+
+                 /* sliding typing title from flex */
+
+                 /*
+
+
+.titleanimation{
+    width: 60vw;
+    height: 4vh;
+    position: relative;
+    widows: 50ch;
+    margin-left: 20vw;
+    }
+                                                
+    .titleanimation h3{
+        font-size: 28px;
+        overflow: hidden;
+        
+        color: black;
+        margin: 0 auto; 
+        letter-spacing: .40em;
+        border-right: 5px solid orange;
+        animation-delay: 8s;
+        background: none;
+        animation: printing 5s steps(5, end) infinite, blink .8s step-end infinite;
+    }
+    
+    @keyframes printing {
+    from{
+    width: 0;
+        }
+    to{
+    width: 80%;
+    }
+    }
+                                                
+    @keyframes blink {
+    from, to{
+     border-color: transparent;
+     } 40%{
+     border-color:orange;
+    }
+    }
+                 */
+
+
+
+                 /*
+<div class="titleanimation">
+            <h3>welcome to my site!</h3>
+    
+        </div>
+                 */
