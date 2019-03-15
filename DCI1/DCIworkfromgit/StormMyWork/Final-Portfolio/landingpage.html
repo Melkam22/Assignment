@@ -19,10 +19,93 @@
         scroll-behavior: smooth;
     }
     body {
-        background: rgba(234,216,165,.3);
+        background-image: url(asset/world.jpg);
+        background-position: center;
+        background-size: cover;
+        /* background: rgba(234,216,165,.3); */
     }
+                                /* animation with leaf */
+
+.bubble {
+        width: 100%;
+        height: 100%;
+    }
+    .set {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .set div {
+        position: absolute;
+        display: block;
+    }
+
+    .set div:nth-child(1)
+    {
+        left: 20%;
+        animation: animate 15s linear infinite;
+       
+    }
+    .set div:nth-child(2)
+    {
+        left: 50%;
+        animation: animate 17s linear infinite; 
+    } 
+    .set div:nth-child(3)
+    {
+        left: 70%;
+        animation: animate 11s linear infinite;
+    } 
+    .set div:nth-child(4)
+    {
+        left: 0%;
+        animation: animate 22s linear infinite; 
+    }  
+    .set div:nth-child(5)
+    {
+        left: 85%;
+        animation: animate 9s linear infinite; 
+    } 
+
+    @keyframes animate
+    {
+        0% {
+            opacity: 0;
+            top: -10%;
+            transform: translateX(20px) rotate(0deg);
+        }
+        10%{
+            opacity: 1;
+        }
+        20%{
+            transform: translateX(-40px) rotate(45deg); 
+        }
+        40%{
+            transform: translateX(20px) rotate(90deg); 
+        }
+        60%{
+            transform: translateX(70px) rotate(135deg); 
+        }
+        80%{
+            transform: translateX(-20px) rotate(180deg); 
+        }
+        100%
+        {
+            top: 110%;
+        transform: translateX(0px) rotate(225deg); 
+        }
+    }
+
+           
     h2, h3, h5 {
         text-align: center;
+    }
+                                /* terms of use */
+    h5 a {
+        color: black;
+        font-size: 18px;
     }
     h6 {
         text-align: center;
@@ -50,7 +133,7 @@
     .slidepage {
         width: 95vw;
         min-height: 15vh;
-        background: rgba(234,216,165,.4);
+        background: rgba(234,216,165,.6);
         position: relative;
         left: -95vw;
         top: 20;
@@ -82,7 +165,7 @@ li {
 a {
     font-size: 25px;
     margin-left: 15px;
-    color: orange;
+    color: black;
 }
 
                         /*programing and related skills with bezier effect*/
@@ -92,14 +175,14 @@ a {
     justify-content: space-around;
     width: 60vw;
     height: 35vh;
-    background: rgba(234,216,165,.2);
+    background: rgba(234,216,165,.7);
     color: white;
     margin-left: 250px;
     box-shadow: 0px 1px 0px 0px black;
 }
 
                 box1, box2, box3, box4, box5 {
-                    width: 7vw;
+                    width: 9vw;
                     height: 6vh;
                     background: black;
                     margin-top: 2px;
@@ -123,7 +206,7 @@ box1:hover {
  box3:hover {
     transition: 4s;
     transition-timing-function: cubic-bezier(0.1, 0.3, 1.0, 0.1);
-    width: 15vw;
+    width: 17vw;
  }
 
  box4:hover {
@@ -170,7 +253,7 @@ box3:hover h3 {
     opacity: 1;
     transition: 4s;
     transition-timing-function: cubic-bezier(0.1, 0.3, 1.0, 0.4);
-    width: 15vw;
+    width: 17vw;
 }
 box4:hover h3 {
     opacity: 1;
@@ -261,7 +344,7 @@ slide:nth-child(4){
     padding: 4px;
     color: black;
     margin-top: 40px;
-    background: rgba(234,216,165,.3);  
+    background: rgba(234,216,165,.7);  
 }
 
 .six {
@@ -452,7 +535,7 @@ button a {
     min-height: 15%;
     display: flex;
     justify-content: space-evenly;
-    background: silver;
+    background: rgba(11,123,53,0.5);
     margin-top: 80px;
 }
 .footone {
@@ -514,6 +597,16 @@ button a {
 </head>
 
 <body>
+                        <!-- animation with leaf  -->
+<div class="bubble">
+    <div class="set">
+    <div><img src="asset/buble.png" height="100px" width="150px"></div>
+    <div><img src="asset/buble.png" height="100px" width="150px"></div>
+    <div><img src="asset/feuille.png" height="100px" width="150px"></div>
+    <div><img src="asset/feuille.png" height="100px" width="150px"></div>
+    <div><img src="asset/buble.png" height="100px" width="150px"></div>
+</div>
+                            
     <section class="main">
         <label class="hamberger" for="icon"><i class="fa fa-bars fa-3x" aria-hidden="true"></i></label>
         <input class="checkbox" type="checkbox" id="icon">
@@ -566,7 +659,8 @@ button a {
             </aside>
             <br>
             
-            <h6> <a href="https://drive.google.com/open?id=0Bwgr2einx68ncmNVdkd5OTJlaFJsYk5zNDdVSWllMjBDUE1R">Download_CV</a></h6>
+            <h6> <a href="https://drive.google.com/open?id=0Bwgr2einx68ncmNVdkd5OTJlaFJsYk5zNDdVSWllMjBDUE1R" 
+                target="_blank">Download_CV</a></h6>
             
             <a class="link" href="inclusivecontent.html">Further reading ...</a>
         </div>
@@ -656,9 +750,13 @@ button a {
         <input type="text" name="name" placeholder="Ashenafi"><br>
         <label>Email</label>
         <input type="email" name="email" placeholder="me@gmail.com"><br>
-        <input class="submit" type="submit" value="Sign-up!">
 
+        <input type="checkbox">   Remember my password
+        <br>
+        <input class="submit" type="submit" value="Sign-up!">
+                 
         </form>
+
 </div>
                                         <!-- goup -->
 <a class="goup" href="#top"><i class="fa fa-chevron-circle-up fa-2x" aria-hidden="true"></i></a>
@@ -678,12 +776,12 @@ button a {
 
     </div>
     <div class="footthree">
-        <h5><a href=""> Terms of use </a></h5>
-        <h5>Email address</h5>
+        <h5><a href="termsofuse.html"> Terms of use </a></h5>
+        <h5><a href="https://drive.google.com/open?id=0Bwgr2einx68ncmNVdkd5OTJlaFJsYk5zNDdVSWllMjBDUE1R"> Email address</a></h5>
 
     </div>
 </footer>
-
+</div>
     </div>
 </body>
 

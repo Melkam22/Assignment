@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .video {
+        position: relative;
+        width: 100%;
+        height: 650px;
+        overflow: hidden;
+    }
+    #video-elem {
+        width: 100%;
+        height: 100%;
+    }
+    video::-webkit-media-controls {
+        display: none !important;
+    }
+    .video-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(220,230,110,0.8);
+        opacity: 0;
+        transition: opacity .5s ease;
+    }
+    .video-overlay:hover {
+        opacity: 1;
+    }
+    .video-overlay h2 {
+        position: absolute;
+        left: 45%;
+        top: 20%;
+        font-size: 50px;
+    }
+    .video-overlay p {
+        position: absolute;
+        color: green;
+        font-size: 40px;
+        text-align: center;
+        margin-top: 35%;
+    }
+    </style>
+</head>
+<body>
+    <div class="video">
+       <video id="video-elem" preload="auto" autoplay="true" loop="loop" 
+        muted="muted" poster="videoGIF.gif"> 
+        <source src="life.mp4.mp4" type="video/mp4">
+            Video not supported
+       
+
+    </video> 
+    <div class="video-overlay">
+        <h2>Big Title</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, eos!</p>
+
+    </div>
+    </div>
+</body>
+</html>
