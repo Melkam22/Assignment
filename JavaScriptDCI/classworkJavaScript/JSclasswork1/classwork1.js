@@ -47,14 +47,16 @@ else {window.open("https://google.com");}
 confirm(want);
  */
 
-            /* nth value in javascript */
+            /* nth value in javascript*/  
 
  let myName = "Ashenafi";
  console.log(myName[2]);
  console.log(myName.length);
+ 
 
-
- /* let shoppingList = ["avocado", "orange", "milk", "bread", "flower"];
+                     /* javascript objects */
+                     
+ let shoppingList = ["avocado", "orange", "milk", "bread", "flower"];
  console.log(shoppingList[2]);
  console.log(shoppingList.length);
 
@@ -81,7 +83,7 @@ confirm(want);
      }
  ];
 
- console.log[moviesList[title]]; */
+ console.log[moviesList[title]];
  
 
 
@@ -96,12 +98,12 @@ console.log(myNumber);
 
 let myNumber1 = 123e-2;
 console.log(myNumber1);
- */
+  
 let myNumber = (120);
 console.log(120 * -Infinity);
 
 
-                    /* concatenation and numbers*/
+                    /* concatenation and numbers
 
 let concat = "Hello";
 let concat1 = "Me ";
@@ -113,7 +115,7 @@ let concat2 = concat + " " + concat1 +
 console.log(typeof concat2);
 
 let ashu = "12" + 7;
-console.log(typeof ashu);
+console.log(typeof ashu);*/
 
                                 /* boolean */
                 
